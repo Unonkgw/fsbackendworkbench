@@ -1,0 +1,137 @@
+.recipe-page {
+  font-family: "Inter", sans-serif;
+  background: #fafafa;
+  color: #111;
+  padding: 40px;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipe-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.recipe-hero-text {
+  flex: 1;
+  text-align: center;
+}
+
+.recipe-image {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  margin: 0 0 10px;
+}
+
+.recipe-category {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.recipe-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 220px;
+}
+
+.btn {
+  padding: 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.btn.youtube {
+  background: linear-gradient(230deg, rgb(255, 166, 122), rgb(4, 152, 249));
+  color: #fff;
+}
+
+.btn.youtube:hover {
+  opacity: 0.9;
+}
+
+.recipe-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.recipe-hero-text .btn.youtube {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.ingredients-card,
+.instructions {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 1;
+}
+
+.ingredients-card h2,
+.instructions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.ingredients-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredients-card li {
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.instruction-step {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+  .recipe-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .recipe-actions {
+    margin: 20px auto;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .recipe-image {
+    max-width: 100%;
+  }
+
+  .recipe-content {
+    flex-direction: column;
+  }
+}

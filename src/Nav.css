@@ -1,0 +1,12 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #ffc107; /* gold highlight for active tab */
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
