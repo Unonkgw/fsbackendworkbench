@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Login from './pages/Login';
 import Recipe from './pages/Recipe';
+import MealView from "./pages/MealView";
+import MealUpdate from "./pages/MealUpdate";
 
 const NavBarLayout = () => (
   <>
@@ -23,6 +25,8 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/login" element={<Login />} />
           <Route path="/recipe" element={<Recipe />} />
+          <Route path="/viewmeals" element={<MealView />} />
+          <Route path="/updatemeal/:idmeal" element={<MealUpdate />} />
         </Route>
       </Routes>
     </Router>
